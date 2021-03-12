@@ -35,21 +35,18 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 
 <script>
-        var allergy_count = 0;
-        var cold_count = 0;
-
+     	var allergy_count = 0;
+        var cold_count = 0; 
 
         function allergyAdd(){
             allergy_count = allergy_count + 1;
-		alert(allergy_count);
-
         }
 
         function coldAdd(){
             cold_count = cold_count + 1;
         }
+</script>
 
-  </script>
 
 
 
@@ -96,8 +93,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
     	<div id="content" class="w3-container">
         <p>Are your eyes watery or itchy?</p>    
-       		<a href="#two" class="w3-btn w3-black"> yes </a>
-		<a href="#two" class="w3-btn w3-black"> no </a>
+       		<a href="#two" onclick=”allergyAdd(); class="w3-btn w3-black"> yes </a>
+		<a href="#two" onclick=”coldAdd();class="w3-btn w3-black"> no </a>
     	</div>
 </div>
 
